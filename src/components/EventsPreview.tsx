@@ -10,7 +10,7 @@ const EventsPreview = () => {
       title: "Healing Circle Workshop",
       date: "March 20, 2024",
       time: "6:00 PM - 8:00 PM",
-      location: "Community Center",
+      location: "Community Center, Winnipeg",
       attendees: 25,
       price: "$35",
       image: "https://images.unsplash.com/photo-1581091226825-a6a2a5aee158?ixlib=rb-4.0.3&auto=format&fit=crop&w=400&q=80"
@@ -20,17 +20,17 @@ const EventsPreview = () => {
       title: "Mindfulness Meditation",
       date: "March 22, 2024",
       time: "7:00 AM - 8:00 AM",
-      location: "Zen Garden Studio",
+      location: "Zen Garden Studio, Winnipeg",
       attendees: 15,
       price: "$20",
       image: "https://images.unsplash.com/photo-1518495973542-4542c06a5843?ixlib=rb-4.0.3&auto=format&fit=crop&w=400&q=80"
     },
     {
       id: 3,
-      title: "Art Therapy Session",
+      title: "Crystal Therapy Session",
       date: "March 25, 2024",
       time: "2:00 PM - 4:00 PM",
-      location: "Creative Healing Space",
+      location: "ShantiLotus Healing, Winnipeg",
       attendees: 12,
       price: "$45",
       image: "https://images.unsplash.com/photo-1470071459604-3b5ec3a7fe05?ixlib=rb-4.0.3&auto=format&fit=crop&w=400&q=80"
@@ -38,14 +38,14 @@ const EventsPreview = () => {
   ];
 
   return (
-    <section className="py-20 bg-gradient-to-br from-teal-50 to-emerald-50">
+    <section className="py-20 bg-gradient-to-br from-indigo-50 to-purple-50">
       <div className="max-w-6xl mx-auto px-6">
         <div className="text-center mb-16">
           <h2 className="text-4xl md:text-5xl font-bold text-gray-800 mb-4">
-            Upcoming <span className="text-teal-600">Events</span>
+            Upcoming <span className="text-purple-600">Events</span>
           </h2>
           <p className="text-xl text-gray-600 max-w-2xl mx-auto mb-8">
-            Join our community events designed to support your healing journey
+            Join our Winnipeg community events designed to support your healing journey
           </p>
         </div>
         
@@ -59,7 +59,7 @@ const EventsPreview = () => {
                   className="w-full h-full object-cover"
                 />
                 <div className="absolute top-4 right-4 bg-white/90 backdrop-blur-sm px-3 py-1 rounded-full">
-                  <span className="text-teal-600 font-semibold">{event.price}</span>
+                  <span className="text-purple-600 font-semibold">{event.price}</span>
                 </div>
               </div>
               
@@ -68,20 +68,20 @@ const EventsPreview = () => {
                 
                 <div className="space-y-2 mb-4">
                   <div className="flex items-center text-gray-600">
-                    <Calendar className="h-4 w-4 mr-2 text-teal-600" />
+                    <Calendar className="h-4 w-4 mr-2 text-purple-600" />
                     <span className="text-sm">{event.date}</span>
                   </div>
                   <div className="flex items-center text-gray-600">
-                    <MapPin className="h-4 w-4 mr-2 text-teal-600" />
+                    <MapPin className="h-4 w-4 mr-2 text-purple-600" />
                     <span className="text-sm">{event.location}</span>
                   </div>
                   <div className="flex items-center text-gray-600">
-                    <Users className="h-4 w-4 mr-2 text-teal-600" />
+                    <Users className="h-4 w-4 mr-2 text-purple-600" />
                     <span className="text-sm">{event.attendees} attending</span>
                   </div>
                 </div>
                 
-                <Button className="w-full bg-teal-600 hover:bg-teal-700 text-white rounded-full">
+                <Button className="w-full bg-purple-600 hover:bg-purple-700 text-white rounded-full">
                   <Ticket className="mr-2 h-4 w-4" />
                   Get Tickets
                 </Button>
@@ -91,7 +91,7 @@ const EventsPreview = () => {
         </div>
         
         <div className="text-center">
-          <Button size="lg" variant="outline" className="border-teal-600 text-teal-700 hover:bg-teal-50 px-8 py-3 rounded-full text-lg">
+          <Button size="lg" variant="outline" className="border-purple-600 text-purple-700 hover:bg-purple-50 px-8 py-3 rounded-full text-lg">
             View All Events
           </Button>
         </div>
