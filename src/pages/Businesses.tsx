@@ -1,4 +1,5 @@
 import { useState } from "react";
+import { Link } from "react-router-dom";
 import { Search, Filter, MapPin, Star, Phone, Globe, Clock } from "lucide-react";
 import { Card, CardContent } from "@/components/ui/card";
 import { Input } from "@/components/ui/input";
@@ -214,7 +215,8 @@ const Businesses = () => {
 
           <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
             {filteredBusinesses.map((business) => (
-              <Card key={business.id} className="group cursor-pointer overflow-hidden hover:shadow-xl transition-all duration-300 hover:scale-105">
+              <Link key={business.id} to={`/businesses/${business.id}`}>
+                <Card className="group cursor-pointer overflow-hidden hover:shadow-xl transition-all duration-300 hover:scale-105">
                 <div className="relative h-48 overflow-hidden">
                   <img 
                     src={business.image}
@@ -271,7 +273,8 @@ const Businesses = () => {
                     </Button>
                   </div>
                 </CardContent>
-              </Card>
+                </Card>
+              </Link>
             ))}
           </div>
 

@@ -1,4 +1,5 @@
 import { useState } from "react";
+import { Link } from "react-router-dom";
 import { Button } from "@/components/ui/button";
 import { Card, CardContent } from "@/components/ui/card";
 import { Input } from "@/components/ui/input";
@@ -167,7 +168,8 @@ const Events = () => {
           <div className="max-w-6xl mx-auto px-6">
             <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
               {filteredEvents.map((event) => (
-                <Card key={event.id} className="overflow-hidden shadow-lg hover:shadow-2xl transition-all duration-300 hover:scale-105 border-0">
+                <Link key={event.id} to={`/events/${event.id}`}>
+                  <Card className="overflow-hidden shadow-lg hover:shadow-2xl transition-all duration-300 hover:scale-105 border-0">
                   <div className="relative h-48">
                     <img 
                       src={event.image}
@@ -206,7 +208,8 @@ const Events = () => {
                       Get Tickets
                     </Button>
                   </CardContent>
-                </Card>
+                  </Card>
+                </Link>
               ))}
             </div>
             
