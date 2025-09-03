@@ -30,8 +30,8 @@ const Header = () => {
                 Member Login
               </a>
             </Button>
-            <Button className="bg-purple-600 hover:bg-purple-700 text-white">
-              Join Community
+            <Button className="bg-purple-600 hover:bg-purple-700 text-white" asChild>
+              <a href="/join">Join Community</a>
             </Button>
             <button className="md:hidden">
               <Menu className="h-6 w-6 text-gray-700" />
