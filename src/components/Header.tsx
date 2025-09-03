@@ -20,7 +20,7 @@ const Header = () => {
             <a href="/events" className="text-gray-700 hover:text-purple-600 transition-colors">Events</a>
             <a href="/businesses" className="text-gray-700 hover:text-purple-600 transition-colors">Businesses</a>
             <a href="/about" className="text-gray-700 hover:text-purple-600 transition-colors">About</a>
-            <a href="#" className="text-gray-700 hover:text-purple-600 transition-colors">Contact</a>
+            <a href="/contact" className="text-gray-700 hover:text-purple-600 transition-colors">Contact</a>
           </nav>
           
           <div className="flex items-center space-x-4">
