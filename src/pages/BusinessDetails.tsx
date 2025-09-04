@@ -9,6 +9,7 @@ import {
 } from "lucide-react";
 import Header from "@/components/Header";
 import Footer from "@/components/Footer";
+import BookAppointment from "@/components/BookAppointment";
 
 const BusinessDetails = () => {
   const { id } = useParams();
@@ -235,10 +236,11 @@ const BusinessDetails = () => {
                   <Separator className="my-4" />
                   
                   <div className="space-y-3">
-                    <Button className="w-full">
-                      <Calendar className="mr-2 h-4 w-4" />
-                      Book Appointment
-                    </Button>
+                    <BookAppointment 
+                      businessName={business.name}
+                      services={business.services}
+                      practitioner={business.practitioner}
+                    />
                     <Button variant="outline" className="w-full">
                       <MessageSquare className="mr-2 h-4 w-4" />
                       Send Message
