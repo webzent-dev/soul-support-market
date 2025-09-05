@@ -97,7 +97,7 @@ const BookAppointment = ({ businessName, services, practitioner }: BookAppointme
       </DialogTrigger>
       <DialogContent className="max-w-4xl max-h-[90vh] overflow-y-auto">
         <DialogHeader>
-          <DialogTitle className="text-2xl">Book Your Appointment</DialogTitle>
+          <DialogTitle className="text-2xl">Book Your Appointment!</DialogTitle>
           <p className="text-muted-foreground">Schedule your session with {practitioner.name} at {businessName}</p>
         </DialogHeader>
 
