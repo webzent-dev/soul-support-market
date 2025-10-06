@@ -18,6 +18,7 @@ import SecuritySettings from "./pages/SecuritySettings";
 import SubscriptionManagement from "./pages/SubscriptionManagement";
 import EventsManagement from "./pages/EventsManagement";
 import CreateEvent from "./pages/CreateEvent";
+import ThankYou from "./pages/ThankYou";
 import NotFound from "./pages/NotFound";
 
 const queryClient = new QueryClient();
@@ -44,6 +45,7 @@ const App = () => (
           <Route path="/dashboard/subscription" element={<SubscriptionManagement />} />
           <Route path="/dashboard/events" element={<EventsManagement />} />
           <Route path="/dashboard/events/new" element={<CreateEvent />} />
+          <Route path="/thank-you" element={<ThankYou />} />
           {/* ADD ALL CUSTOM ROUTES ABOVE THE CATCH-ALL "*" ROUTE */}
           <Route path="*" element={<NotFound />} />
         </Routes>
