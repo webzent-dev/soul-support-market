@@ -1,6 +1,7 @@
 
 import Header from "@/components/Header";
 import Hero from "@/components/Hero";
+import FestivalPromo from "@/components/FestivalPromo";
 import BusinessSpotlight from "@/components/BusinessSpotlight";
 import SpotlightedEvent from "@/components/SpotlightedEvent";
 import EventsPreview from "@/components/EventsPreview";
@@ -14,6 +15,7 @@ const Index = () => {
     <div className="min-h-screen">
       <Header />
       <Hero />
+      <FestivalPromo />
       <BusinessSpotlight />
       <SpotlightedEvent />
       <EventsPreview />
